@@ -84,7 +84,7 @@ export default function UserList() {
 
                     </Tbody>
                 </Table>
-                
+                <Pagination />
             </Box>
         </Flex>
     </Box>)
