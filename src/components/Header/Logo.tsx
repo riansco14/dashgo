@@ -4,7 +4,7 @@ import React from 'react'
 
 export function Logo() {
     return (<Text
-        fontSize="3xl"
+        fontSize={{sm: "2xl", md: "3xl"}}
         fontWeight="bold"
         letterSpacing="tight"
         width="64"
