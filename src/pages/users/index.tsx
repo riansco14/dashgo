@@ -60,7 +60,7 @@ export default function UserList() {
                     </Thead>
                     <Tbody>
                         {users.map(userItem => {
-                            return (<Tr bgColor={userItem.isSelected ? "gray.700" : "gray.800"}>
+                            return (<Tr key={userItem.email} bgColor={userItem.isSelected ? "gray.700" : "gray.800"}>
                                 <Td px="6">
                                     <Checkbox
                                         isChecked={userItem.isSelected}
@@ -84,7 +84,7 @@ export default function UserList() {
 
                     </Tbody>
                 </Table>
-                <Pagination />
+                <Pagination numberStart={0} numberEnd={10} numberTotal={100} />
             </Box>
         </Flex>
     </Box>)
